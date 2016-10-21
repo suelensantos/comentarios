@@ -11,3 +11,9 @@ A configuração necessária será feita a partir do arquivo Makefile com o coma
 	```
 	$ make setup
 	```
+
+2. Levanta o servidor local. _(Porta: 8001)_:
+
+	```
+	$ make run
+	```
