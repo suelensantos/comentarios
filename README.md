@@ -17,3 +17,21 @@ A configuração necessária será feita a partir do arquivo Makefile com o coma
 	```
 	$ make run
 	```
+
+3. Este item é opcional. Caso queira testar as operações do seu código, execute o comando abaixo:
+
+	```
+	$ make test
+	```
+
+4. Este item é opcional. Caso queira ver possíveis erros encontrados fora do padrão do código Python, execute o comando abaixo:
+
+	```
+	$ make pep8
+	```
+
+5. Este item é opcional. Caso queira ver o total de possíveis erros encontrados fora do padrão do código Python, execute o comando abaixo:
+
+	```
+	$ make pep8-total
+	```
