@@ -5,7 +5,7 @@ run:
 	python app/comentario.py
 
 test:
-	python manage.py test
+	python app/tests.py
 
 pep8:
 	@pep8 --ignore=E501 .
