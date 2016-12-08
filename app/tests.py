@@ -6,11 +6,15 @@ import unittest
 
 class ComentarioTestCase(unittest.TestCase):
 
-    def test_comentarios(self):
+    def setUp(self):
         tester = app.test_client(self)
-        response = tester.get('/comentarios/1234', content_type='application/json')
-        self.assertEqual(response.status_code, 200)
-        data = json.loads(response.data)
+        self.response = tester.get('comentarios/1234', content_type='application/json')
+
+    def test_get(self):
+        self.assertEqual(200, self.response.status_code)
+
+    def test_content_comentarios(self):
+        data = json.loads(self.response.data)
         self.assertNotEqual(data[u'result'][u'post_id'], 0)
 
 

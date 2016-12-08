@@ -5,7 +5,7 @@ setup:
 	pip install -r requirements.txt
 
 run:
-	python app/comentario.py
+	python app/server.py
 
 test:
 	python app/tests.py
